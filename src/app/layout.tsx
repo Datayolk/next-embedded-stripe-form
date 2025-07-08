@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="scroll-smooth">
-			<body className="antialiased mx-auto my-20 container px-4">
+			<body className="antialiased">
 				{children}
 			</body>
 		</html>
