@@ -76,6 +76,10 @@ Open [http://localhost:3000](http://localhost:3000) to see your payment form in 
 - Edit `src/components/checkout.tsx` to modify the payment form appearance
 - Update `src/action/stripe.ts` to change payment settings (currency, mode, etc.)
 
+### Update the Return Page
+
+- Edit `src/app/return/page.tsx` to change the support email from `orders@example.com` to your actual support email address
+
 ## 📱 Using with bolt.new
 
 This template is optimized for bolt.new AI generation:
