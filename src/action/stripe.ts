@@ -2,6 +2,7 @@
 
 import { headers } from 'next/headers'
 import { stripe } from '../lib/stripe'
+import { env } from '@/lib/env'
 
 export async function fetchClientSecret() {
 	const origin = (await headers()).get('origin')
@@ -14,7 +15,7 @@ export async function fetchClientSecret() {
 				// Provide the exact Price ID (for example, price_1234) of
 				// the product you want to sell
 				// price: '{{PRICE_ID}}',
-				price: process.env.PRICE_ID,
+				price: env.PRICE_ID,
 				quantity: 1
 			},
 		],
