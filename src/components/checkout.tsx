@@ -1,6 +1,7 @@
 'use client'
 
 import { fetchClientSecret } from '@/action/stripe'
+import { env } from '@/lib/env'
 import {
 	EmbeddedCheckout,
 	EmbeddedCheckoutProvider
@@ -8,7 +9,7 @@ import {
 import { loadStripe } from '@stripe/stripe-js'
 
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string)
+const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string)
 
 export default function Checkout() {
 	return (
